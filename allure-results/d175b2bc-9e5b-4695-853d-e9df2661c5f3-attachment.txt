@@ -1,5 +1,0 @@
-Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {} and headers: {'Content-Type': 'application/json'}
-API executed successfully and the response code: 200
-Expected response code: 200 is matches the actual code: 200
-API executed successfully and the response data is {'reason': 'Bad credentials'}
-Schema validation passed.

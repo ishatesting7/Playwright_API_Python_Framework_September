@@ -51,7 +51,7 @@
       "endpoint": "/booking",
       "method": "POST",
       "params": {
-          "firstname" : "Dipankar",
+          "firstname" : "Isha",
           "lastname" : "B",
           "totalprice" : 111,
           "depositpaid" : true,

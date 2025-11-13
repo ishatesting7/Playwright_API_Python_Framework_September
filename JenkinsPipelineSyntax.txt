@@ -13,7 +13,7 @@ pipeline {
     
     environment {
         PROJECT_PATH = 'D:/Playwright_API_Python_Framework'
-        PYTHON_PATH = 'C:/Users/Dipankar/anaconda3/envs/Python_API_Framework/python.exe'
+        PYTHON_PATH = 'C:/Users/Isha/anaconda3/envs/Python_API_Framework/python.exe'
         ENV="${params.ENVIRONMENT}"
         
         VENV_DIR = 'venvAPI'
@@ -45,7 +45,7 @@ pipeline {
           stage('Checkout') {
             steps {
                 // Checkout code from Git
-               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/DipankarDandapat/Playwright_API_Python_Framework.git']])
+               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/ishatesting7/Playwright_API_Python_Framework_September.git']])
                 echo "Code checked out successfully."
             }
         }
