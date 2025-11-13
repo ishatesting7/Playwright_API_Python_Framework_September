@@ -24,12 +24,12 @@
 11_11_2025 07:56:38 PM - api_utilities - <module> - INFO: API executed successfully and the response value in token is e454585bf674279
 11_11_2025 07:56:38 PM - Shared_API_Data - <module> - INFO: Setting data for key: token_id with value: e454585bf674279
 11_11_2025 07:56:38 PM - Shared_API_Data - <module> - INFO: Current data state: {'token_id': 'e454585bf674279'}
-11_11_2025 07:56:38 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'Isha', 'password': 'Isha'} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:56:38 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'Dipankar', 'password': 'Dipankar'} and headers: {'Content-Type': 'application/json'}
 11_11_2025 07:56:39 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
 11_11_2025 07:56:39 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
 11_11_2025 07:56:39 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'reason': 'Bad credentials'}
 11_11_2025 07:56:39 PM - api_validations - <module> - INFO: Schema validation passed.
-11_11_2025 07:56:39 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'Isha', 'password': ''} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:56:39 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'Dipankar', 'password': ''} and headers: {'Content-Type': 'application/json'}
 11_11_2025 07:56:39 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
 11_11_2025 07:56:39 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
 11_11_2025 07:56:39 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'reason': 'Bad credentials'}

@@ -30,8 +30,8 @@
       "endpoint": "/auth",
       "method": "POST",
       "params": {
-          "username" : "Isha",
-          "password" : "Isha"
+          "username" : "Dipankar",
+          "password" : "Dipankar"
       },
       "headers": {
         "Content-Type": "application/json"
@@ -54,7 +54,7 @@
       "endpoint": "/auth",
       "method": "POST",
       "params": {
-        "username" : "Isha",
+        "username" : "Dipankar",
         "password" : ""
       },
       "headers": {
