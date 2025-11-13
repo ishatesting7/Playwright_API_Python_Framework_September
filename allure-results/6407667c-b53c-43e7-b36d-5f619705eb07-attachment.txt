@@ -1,0 +1,11 @@
+Setting up environment: staging
+testcase start now .....
+Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'admin', 'password': 'password123'} and headers: {'Content-Type': 'application/json'}
+API executed successfully and the response code: 200
+Expected response code: 200 is matches the actual code: 200
+API executed successfully and the response data is {'token': '8fc516942fa1588'}
+Schema validation passed.
+API executed successfully and the response data is {'token': '8fc516942fa1588'}
+API executed successfully and the response value in token is 8fc516942fa1588
+Setting data for key: token_id with value: 8fc516942fa1588
+Current data state: {'token_id': '8fc516942fa1588'}

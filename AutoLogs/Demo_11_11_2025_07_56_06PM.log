@@ -1,0 +1,27 @@
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/createAuth.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/createAuth.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Successfully read data from file: createAuth.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/createBooking.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/createBooking.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Successfully read data from file: createBooking.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/updateBooking.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/updateBooking.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Successfully read data from file: updateBooking.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/getBookingByID.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/getBookingByID.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Successfully read data from file: getBookingByID.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/deleteBookingByID.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/deleteBookingByID.json
+11_11_2025 07:56:06 PM - file_reader - <module> - INFO: Successfully read data from file: deleteBookingByID.json
+11_11_2025 07:56:06 PM - conftest - <module> - INFO: Setting up environment: staging
+11_11_2025 07:56:07 PM - conftest - <module> - INFO: testcase start now .....
+11_11_2025 07:56:07 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'admin', 'password': 'password123'} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:56:09 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
+11_11_2025 07:56:09 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
+11_11_2025 07:56:09 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'token': '4b04c34f0714525'}
+11_11_2025 07:56:09 PM - api_validations - <module> - INFO: Schema validation passed.
+11_11_2025 07:56:09 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'token': '4b04c34f0714525'}
+11_11_2025 07:56:09 PM - api_utilities - <module> - INFO: API executed successfully and the response value in token is 4b04c34f0714525
+11_11_2025 07:56:09 PM - Shared_API_Data - <module> - INFO: Setting data for key: token_id with value: 4b04c34f0714525
+11_11_2025 07:56:09 PM - Shared_API_Data - <module> - INFO: Current data state: {'token_id': '4b04c34f0714525'}
+11_11_2025 07:56:09 PM - conftest - <module> - INFO: testcase End now .....

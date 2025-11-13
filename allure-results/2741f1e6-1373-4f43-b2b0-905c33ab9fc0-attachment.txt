@@ -1,0 +1,15 @@
+[32mINFO    [0m <module>:api_actions.py:39 Performing POST request to https://restful-booker.herokuapp.com/booking with payload: {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'} and headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer '}
+[32mINFO    [0m <module>:api_utilities.py:13 API executed successfully and the response code: 200
+[32mINFO    [0m <module>:api_validations.py:18 Expected response code: 200 is matches the actual code: 200
+[32mINFO    [0m <module>:api_utilities.py:26 API executed successfully and the response data is {'bookingid': 3030, 'booking': {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'}}
+[32mINFO    [0m <module>:api_utilities.py:47 API executed successfully and the response value in booking.firstname is Jason
+[32mINFO    [0m <module>:api_validations.py:50 Jason is present in the response
+[32mINFO    [0m <module>:api_utilities.py:26 API executed successfully and the response data is {'bookingid': 3030, 'booking': {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'}}
+[32mINFO    [0m <module>:api_utilities.py:47 API executed successfully and the response value in booking.lastname is Lee
+[32mINFO    [0m <module>:api_validations.py:50 Lee is present in the response
+[32mINFO    [0m <module>:api_utilities.py:26 API executed successfully and the response data is {'bookingid': 3030, 'booking': {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'}}
+[32mINFO    [0m <module>:api_validations.py:66 Schema validation passed.
+[32mINFO    [0m <module>:api_utilities.py:26 API executed successfully and the response data is {'bookingid': 3030, 'booking': {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'}}
+[32mINFO    [0m <module>:api_utilities.py:47 API executed successfully and the response value in bookingid is 3030
+[32mINFO    [0m <module>:Shared_API_Data.py:12 Setting data for key: booking_id with value: 3030
+[32mINFO    [0m <module>:Shared_API_Data.py:14 Current data state: {'token_id': 'e454585bf674279', 'booking_id': 3030}

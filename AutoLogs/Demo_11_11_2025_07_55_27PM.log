@@ -1,0 +1,9 @@
+11_11_2025 07:55:27 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/createAuth.json
+11_11_2025 07:55:27 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/createAuth.json
+11_11_2025 07:55:27 PM - file_reader - <module> - INFO: Successfully read data from file: createAuth.json
+11_11_2025 07:55:27 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/getBookingByID.json
+11_11_2025 07:55:27 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/getBookingByID.json
+11_11_2025 07:55:27 PM - file_reader - <module> - INFO: Successfully read data from file: getBookingByID.json
+11_11_2025 07:55:27 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/deleteBookingByID.json
+11_11_2025 07:55:27 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/deleteBookingByID.json
+11_11_2025 07:55:27 PM - file_reader - <module> - INFO: Successfully read data from file: deleteBookingByID.json

@@ -1,0 +1,35 @@
+11_11_2025 07:54:30 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/createAuth.json
+11_11_2025 07:54:30 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/createAuth.json
+11_11_2025 07:54:30 PM - file_reader - <module> - INFO: Successfully read data from file: createAuth.json
+11_11_2025 07:54:30 PM - conftest - <module> - INFO: Setting up environment: staging
+11_11_2025 07:54:33 PM - conftest - <module> - INFO: testcase start now .....
+11_11_2025 07:54:33 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'admin', 'password': 'password123'} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:54:34 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
+11_11_2025 07:54:34 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
+11_11_2025 07:54:34 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'token': '8fc516942fa1588'}
+11_11_2025 07:54:34 PM - api_validations - <module> - INFO: Schema validation passed.
+11_11_2025 07:54:34 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'token': '8fc516942fa1588'}
+11_11_2025 07:54:34 PM - api_utilities - <module> - INFO: API executed successfully and the response value in token is 8fc516942fa1588
+11_11_2025 07:54:34 PM - Shared_API_Data - <module> - INFO: Setting data for key: token_id with value: 8fc516942fa1588
+11_11_2025 07:54:34 PM - Shared_API_Data - <module> - INFO: Current data state: {'token_id': '8fc516942fa1588'}
+11_11_2025 07:54:34 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'Dipankar', 'password': 'Dipankar'} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:54:34 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
+11_11_2025 07:54:34 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
+11_11_2025 07:54:34 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'reason': 'Bad credentials'}
+11_11_2025 07:54:34 PM - api_validations - <module> - INFO: Schema validation passed.
+11_11_2025 07:54:34 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'Dipankar', 'password': ''} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:54:34 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
+11_11_2025 07:54:34 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
+11_11_2025 07:54:34 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'reason': 'Bad credentials'}
+11_11_2025 07:54:34 PM - api_validations - <module> - INFO: Schema validation passed.
+11_11_2025 07:54:34 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': '', 'password': ''} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:54:35 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
+11_11_2025 07:54:35 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
+11_11_2025 07:54:35 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'reason': 'Bad credentials'}
+11_11_2025 07:54:35 PM - api_validations - <module> - INFO: Schema validation passed.
+11_11_2025 07:54:35 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:54:36 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
+11_11_2025 07:54:36 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
+11_11_2025 07:54:36 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'reason': 'Bad credentials'}
+11_11_2025 07:54:36 PM - api_validations - <module> - INFO: Schema validation passed.
+11_11_2025 07:54:36 PM - conftest - <module> - INFO: testcase End now .....

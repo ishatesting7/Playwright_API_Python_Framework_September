@@ -1,0 +1,15 @@
+Performing POST request to https://restful-booker.herokuapp.com/booking with payload: {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'} and headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer '}
+API executed successfully and the response code: 200
+Expected response code: 200 is matches the actual code: 200
+API executed successfully and the response data is {'bookingid': 3030, 'booking': {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'}}
+API executed successfully and the response value in booking.firstname is Jason
+Jason is present in the response
+API executed successfully and the response data is {'bookingid': 3030, 'booking': {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'}}
+API executed successfully and the response value in booking.lastname is Lee
+Lee is present in the response
+API executed successfully and the response data is {'bookingid': 3030, 'booking': {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'}}
+Schema validation passed.
+API executed successfully and the response data is {'bookingid': 3030, 'booking': {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'}}
+API executed successfully and the response value in bookingid is 3030
+Setting data for key: booking_id with value: 3030
+Current data state: {'token_id': 'e454585bf674279', 'booking_id': 3030}

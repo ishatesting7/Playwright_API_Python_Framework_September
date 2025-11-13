@@ -1,0 +1,64 @@
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/createAuth.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/createAuth.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Successfully read data from file: createAuth.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/createBooking.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/createBooking.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Successfully read data from file: createBooking.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/updateBooking.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/updateBooking.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Successfully read data from file: updateBooking.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/getBookingByID.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/getBookingByID.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Successfully read data from file: getBookingByID.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Resolved file path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/deleteBookingByID.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Reading file from path: /Users/vikasbhandari/Documents/PlaywrightClass/Playwright_API_Python_Framework_September/testData/deleteBookingByID.json
+11_11_2025 07:56:36 PM - file_reader - <module> - INFO: Successfully read data from file: deleteBookingByID.json
+11_11_2025 07:56:36 PM - conftest - <module> - INFO: Setting up environment: staging
+11_11_2025 07:56:37 PM - conftest - <module> - INFO: testcase start now .....
+11_11_2025 07:56:37 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'admin', 'password': 'password123'} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:56:38 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
+11_11_2025 07:56:38 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
+11_11_2025 07:56:38 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'token': 'e454585bf674279'}
+11_11_2025 07:56:38 PM - api_validations - <module> - INFO: Schema validation passed.
+11_11_2025 07:56:38 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'token': 'e454585bf674279'}
+11_11_2025 07:56:38 PM - api_utilities - <module> - INFO: API executed successfully and the response value in token is e454585bf674279
+11_11_2025 07:56:38 PM - Shared_API_Data - <module> - INFO: Setting data for key: token_id with value: e454585bf674279
+11_11_2025 07:56:38 PM - Shared_API_Data - <module> - INFO: Current data state: {'token_id': 'e454585bf674279'}
+11_11_2025 07:56:38 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'Dipankar', 'password': 'Dipankar'} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:56:39 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
+11_11_2025 07:56:39 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
+11_11_2025 07:56:39 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'reason': 'Bad credentials'}
+11_11_2025 07:56:39 PM - api_validations - <module> - INFO: Schema validation passed.
+11_11_2025 07:56:39 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': 'Dipankar', 'password': ''} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:56:39 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
+11_11_2025 07:56:39 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
+11_11_2025 07:56:39 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'reason': 'Bad credentials'}
+11_11_2025 07:56:39 PM - api_validations - <module> - INFO: Schema validation passed.
+11_11_2025 07:56:39 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {'username': '', 'password': ''} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:56:39 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
+11_11_2025 07:56:39 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
+11_11_2025 07:56:39 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'reason': 'Bad credentials'}
+11_11_2025 07:56:39 PM - api_validations - <module> - INFO: Schema validation passed.
+11_11_2025 07:56:39 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/auth with payload: {} and headers: {'Content-Type': 'application/json'}
+11_11_2025 07:56:40 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
+11_11_2025 07:56:40 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
+11_11_2025 07:56:40 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'reason': 'Bad credentials'}
+11_11_2025 07:56:40 PM - api_validations - <module> - INFO: Schema validation passed.
+11_11_2025 07:56:40 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/booking with payload: {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'} and headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer '}
+11_11_2025 07:56:40 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 200
+11_11_2025 07:56:40 PM - api_validations - <module> - INFO: Expected response code: 200 is matches the actual code: 200
+11_11_2025 07:56:40 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'bookingid': 3030, 'booking': {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'}}
+11_11_2025 07:56:40 PM - api_utilities - <module> - INFO: API executed successfully and the response value in booking.firstname is Jason
+11_11_2025 07:56:40 PM - api_validations - <module> - INFO: Jason is present in the response
+11_11_2025 07:56:40 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'bookingid': 3030, 'booking': {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'}}
+11_11_2025 07:56:40 PM - api_utilities - <module> - INFO: API executed successfully and the response value in booking.lastname is Lee
+11_11_2025 07:56:40 PM - api_validations - <module> - INFO: Lee is present in the response
+11_11_2025 07:56:40 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'bookingid': 3030, 'booking': {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'}}
+11_11_2025 07:56:40 PM - api_validations - <module> - INFO: Schema validation passed.
+11_11_2025 07:56:40 PM - api_utilities - <module> - INFO: API executed successfully and the response data is {'bookingid': 3030, 'booking': {'firstname': 'Jason', 'lastname': 'Lee', 'totalprice': 111, 'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'}}
+11_11_2025 07:56:40 PM - api_utilities - <module> - INFO: API executed successfully and the response value in bookingid is 3030
+11_11_2025 07:56:40 PM - Shared_API_Data - <module> - INFO: Setting data for key: booking_id with value: 3030
+11_11_2025 07:56:40 PM - Shared_API_Data - <module> - INFO: Current data state: {'token_id': 'e454585bf674279', 'booking_id': 3030}
+11_11_2025 07:56:40 PM - api_actions - <module> - INFO: Performing POST request to https://restful-booker.herokuapp.com/booking with payload: {'depositpaid': True, 'bookingdates': {'checkin': '2018-01-01', 'checkout': '2019-01-01'}, 'additionalneeds': 'Dinner'} and headers: {'Authorization': 'Bearer '}
+11_11_2025 07:56:40 PM - api_utilities - <module> - INFO: API executed successfully and the response code: 500
+11_11_2025 07:56:40 PM - conftest - <module> - INFO: testcase End now .....
