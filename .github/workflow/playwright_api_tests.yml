@@ -1,0 +1,114 @@
+name: Playwright API Tests with Allure Report and Notifications
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  run-tests:
+    name: Run Playwright API Tests (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.9, 3.10, 3.11]
+
+    steps:
+      # 1️⃣ Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2️⃣ Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # 3️⃣ Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4️⃣ Install Playwright (for API/UI use)
+      - name: Install Playwright
+        run: |
+          python -m playwright install
+          python -m playwright install-deps
+
+      # 5️⃣ Run Pytest with Allure results
+      - name: Run Pytest
+        run: |
+          pytest --maxfail=1 --disable-warnings -q --alluredir=allure-results
+
+      # 6️⃣ Upload Allure results (raw)
+      - name: Upload Allure results
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-${{ matrix.python-version }}
+          path: allure-results
+
+  # 🧩 Aggregate reports only once (after all matrix jobs finish)
+  generate-report:
+    name: Generate and Deploy Allure Report
+    needs: run-tests
+    runs-on: ubuntu-latest
+    if: ${{ always() }}
+
+    steps:
+      # 7️⃣ Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 8️⃣ Download all Allure results from previous jobs
+      - name: Download Allure results
+        uses: actions/download-artifact@v4
+        with:
+          pattern: allure-results-*
+          path: allure-results
+
+      # 9️⃣ Install Python and Allure
+      - name: Setup Python and Allure
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y allure
+          pip install allure-pytest
+
+      # 🔟 Generate Allure report
+      - name: Generate Allure HTML report
+        run: |
+          mkdir -p allure-report
+          allure generate allure-results -o allure-report --clean
+
+      # 11️⃣ Upload Allure HTML report as artifact
+      - name: Upload Allure HTML Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
+
+      # 12️⃣ Deploy report to GitHub Pages
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-report
+
+      # 13️⃣ Slack Notification (always runs)
+      - name: Send Slack notification
+        if: always()
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_TITLE: "Playwright API Tests - ${{ job.status }}"
+          SLACK_MESSAGE: |
+            Repository: ${{ github.repository }}
+            Workflow: ${{ github.workflow }}
+            Status: ${{ job.status }}
+            Report: https://${{ github.repository_owner }}.github.io/Playwright_API_Python_Framework_September
