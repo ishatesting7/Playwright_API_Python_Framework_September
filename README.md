@@ -51,7 +51,7 @@ This repository contains a comprehensive API testing framework built using Pytho
 
   - Install all required packages using this command
     ```sh
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ``` 
 
 ## Project Structure
